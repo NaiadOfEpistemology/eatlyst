@@ -1,0 +1,37 @@
+name: eatlyst_new
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.1.2
+  tflite_flutter:
+    git:
+      url: https://github.com/NaiadOfEpistemology/flutter-tflite
+      ref: main
+  path_provider: ^2.0.15
+  charts_flutter: ^0.12.0
+  shared_preferences: ^2.1.1
+  http: ^1.2.0
+  image: ^4.1.3
+  share_plus: ^7.0.2
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/eatlyst_model.tflite
+    - assets/models/labels.txt
+
